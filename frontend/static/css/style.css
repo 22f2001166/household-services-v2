@@ -1,0 +1,80 @@
+/* Typewriter Effect */
+.typewriter {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid black;
+    font-size: 1.2rem;
+    animation: blinkCursor 0.7s infinite;
+  }
+  
+  @keyframes blinkCursor {
+    50% {
+      border-color: transparent;
+    }
+  }
+  
+  /* Smooth Fade-in Effect */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s ease-out forwards;
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Button Hover Effect */
+  .animate-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .animate-hover:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Testimonial Animation */
+  .testimonial-card {
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; 
+  }
+  
+  .testimonial-card.fade-out {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+/* Ensure navbar is visible */
+.navbar {
+  position: relative;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.1); 
+  backdrop-filter: blur(5px);
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+}
+

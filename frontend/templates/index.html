@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Household Services App</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- jQuery (MUST be loaded before Bootstrap) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        
+    <!-- vue2 cdn and vue router -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.16/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-router@3/dist/vue-router.js"></script>  
+
+    <!-- chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- GSAP (For animations) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/static/css/style.css">
+
+    <!-- favicon ico -->
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+
+</head>
+<body>
+    <!-- Vue App mounts here -->
+    <div id="app">
+      <navbar-component></navbar-component>
+      <router-view></router-view>
+    </div>
+
+    <script src="/static/js/pages/homepage.js"></script>     <!-- loading pages -->
+    <script src="/static/js/pages/loginpage.js"></script>
+    <script src="/static/js/pages/registerpage.js"></script>
+    <script src="/static/js/pages/admin/admindashboard.js"></script>
+    <script src="/static/js/pages/professional/professionaldashboard.js"></script>
+    <script src="/static/js/pages/customer/customerdashboard.js"></script>
+    <script src="/static/js/components/navbar.js"></script> 
+    <script src="/static/js/utils/router.js"></script>  <!-- Load router.js and navbar.js BEFORE app.js -->
+    <script src="/static/js/app.js"></script>
+
+</body>
+</html>
